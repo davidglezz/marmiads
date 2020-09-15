@@ -4,6 +4,8 @@ if (!defined('_PS_VERSION_')) {
     exit;
 }
 
+require_once __DIR__ . '/classes/Config.php';
+
 /**
  * MarmiAds Prestashop module
  * 
