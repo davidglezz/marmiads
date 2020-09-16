@@ -1,0 +1,12 @@
+name: PHP Test
+on: [push, pull_request]
+jobs:
+  php-cs-fixer:
+    name: PHP Coding Standards Fixer
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: OSKAR-PHP-CS-Fixer
+        uses: OskarStark/php-cs-fixer-ga@2.16.4
+        with:
+          args: --diff --dry-run .
