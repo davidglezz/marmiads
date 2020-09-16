@@ -80,7 +80,7 @@ class MarmiadsEndpointModuleFrontController extends ModuleFrontController
 
     /**
      * Output a json response and terminate the current script
-     * 
+     *
      * @param $content json-serializable data
      *
      * @throws PrestaShopException

@@ -21,7 +21,7 @@ class Config
 
     /**
      * Gets shop/s defaul language
-     * 
+     *
      * @return array with id, name and iso_code keys
      */
     private function getDefaultLanguage()
@@ -38,7 +38,7 @@ class Config
 
     /**
      * Gets shop/s defaul currency
-     * 
+     *
      * @return array with id, name and iso_code keys
      */
     private function getDefaultCurrency()
@@ -55,7 +55,7 @@ class Config
 
     /**
      * Return shops information about name, languages and currencies.
-     * 
+     *
      * @return array Shops with id, name, languages and currencies keys
      */
     private function getShops()
