@@ -1,17 +1,12 @@
 name: PHP Test
-
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
+on: [push, pull_request]
 jobs:
   php-cs-fixer:
-    runs-on: ubuntu-latest
     name: PHP Coding Standards Fixer
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-  
       - name: OSKAR-PHP-CS-Fixer
         uses: OskarStark/php-cs-fixer-ga@2.16.4
+        with:
+          args: --diff --dry-run
