@@ -56,8 +56,25 @@ class marmiads extends Module
 
     protected function renderForm()
     {
+        $base_url = $this->context->link->getModuleLink($this->name, 'endpoint') . '?action=';
+
         $form = [
             [
+                'form' => [
+                    'legend' => [
+                        'title' => $this->l('Marmiads endpoint info'),
+                        'icon' => 'icon-info',
+                    ],
+                    'input' => [
+                        [
+                            'type' => 'html',
+                            'label' => $this->l('{base_url}'),
+                            'name' => 'base_url',
+                            'html_content'  => '<label class="control-label">' . $base_url . '</label>',
+                        ],
+                    ],
+                ],
+            ], [
                 'form' => [
                     'legend' => [
                         'title' => $this->l('Marmiads module token configuration'),
