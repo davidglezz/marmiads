@@ -9,7 +9,7 @@ require_once __DIR__ . '/classes/ProductFeed.php';
 
 /**
  * MarmiAds Prestashop module
- * 
+ *
  * @author David González García <davidglez@marmitakoo.com>
  */
 class marmiads extends Module
