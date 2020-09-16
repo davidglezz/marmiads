@@ -40,6 +40,11 @@ class marmiads extends Module
         return parent::uninstall();
     }
 
+    /**
+     * Module configuration page
+     *
+     * @return string html form
+     */
     public function getContent()
     {
         $html = '';
@@ -116,6 +121,11 @@ class marmiads extends Module
         ];
     }
 
+    /**
+     * Generate 40-character hexadecimal random token
+     *
+     * @return string token
+     */
     private function randomToken()
     {
         return sha1(uniqid());
