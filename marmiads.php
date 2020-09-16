@@ -5,6 +5,7 @@ if (!defined('_PS_VERSION_')) {
 }
 
 require_once __DIR__ . '/classes/Config.php';
+require_once __DIR__ . '/classes/ProductFeed.php';
 
 /**
  * MarmiAds Prestashop module
