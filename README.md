@@ -9,7 +9,7 @@ MarmiAds Prestashop module
 
 ## Technical decisions
 
-- There are no unit tests: Prestashop 1.6 did not think about the tests. Furthermore it heavily uses the singleton design pattern.
+- There are no unit tests: Prestashop 1.6 did not think about the module tests. Furthermore it heavily uses the singleton design pattern.
 
 - No composer and autoload: There are 2 reasons why composer is not used:
   1. The module has no external dependencies
@@ -19,3 +19,10 @@ MarmiAds Prestashop module
 
 - Router: Prestashop 1.6 does not allow advanced routes, only a name, for example `/module/marmiads/feed` but not `/module/marmiads/feed/products`. To allow routes like `/feed/products` I have decided to include the route in a `GET` parameter, so that the `base_url` would be: `http://example.com/module/marmiads/endpoint?action=`
 
+- Coding Standard: I use PSR1 and PSR2 to follow standards. You can check if the code style is correct with the cs-fixer tool:
+  ```
+  docker run --rm \
+    --user $(id -u):$(id -g) \
+    --volume $(pwd):/data \
+    cytopia/php-cs-fixer fix --dry-run --diff .
+  ```
