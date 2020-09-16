@@ -9,7 +9,7 @@ MarmiAds Prestashop module
 
 ## Technical decisions
 
-- There are no unit tests: Prestashop 1.6 did not think about the tests. Furthermore it heavily uses the singleton design pattern.
+- There are no unit tests: Prestashop 1.6 did not think about the module tests. Furthermore it heavily uses the singleton design pattern.
 
 - No composer and autoload: There are 2 reasons why composer is not used:
   1. The module has no external dependencies
