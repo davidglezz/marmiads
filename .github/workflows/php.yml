@@ -9,4 +9,4 @@ jobs:
       - name: OSKAR-PHP-CS-Fixer
         uses: OskarStark/php-cs-fixer-ga@2.16.4
         with:
-          args: --diff --dry-run
+          args: --diff --dry-run .
