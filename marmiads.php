@@ -91,6 +91,7 @@ class marmiads extends Module
                             'label' => $this->l('Token'),
                             'name' => 'MARMIADS_TOKEN',
                             'readonly'  => true,
+                            'desc'  => $this->l('The token must be included in the headers or in the GET or POST parameters'),
                         ],
                     ],
                     'submit' => [
